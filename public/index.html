@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buat QRIS - Lutify Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Buat QRIS - Lutify Store</h1>
+      <form action="/generate" method="POST">
+        <label for="qris">Masukkan QRIS Statis</label>
+        <textarea
+          name="qris"
+          id="qris"
+          required
+          rows="6"
+          placeholder="Masukkan string QRIS statis di sini"
+        ></textarea>
+
+        <label for="nominal">Masukkan Nominal (Rp)</label>
+        <input
+          type="number"
+          name="nominal"
+          id="nominal"
+          required
+          placeholder="Contoh: 50000"
+        />
+
+        <button type="submit">🔄 Buat QRIS</button>
+      </form>
+    </div>
+  </body>
+</html>
